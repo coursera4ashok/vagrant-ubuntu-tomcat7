@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise32"
-  config.vm.network :private_network, ip: '192.168.33.10'
+  config.vm.box = "precise64"
+  config.vm.network :private_network, ip: '192.168.8.21'
   config.vm.network :forwarded_port, guest: 8080, host: 4880
   config.vm.network :forwarded_port, guest: 8000, host: 4800
   config.vm.network :forwarded_port, guest: 1099, host: 1099
